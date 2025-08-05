@@ -1,11 +1,11 @@
 # sendMailWithImage
 
-*-1 : npm init -y
-What It Does:
-   -> Initializes a new Node.js project.
-   -> Automatically fills out the package.json with default values.
-   -> Skips the interactive prompts (which you'd get if you just used npm init without -y).
-*-2 : npm i typescript --save-dev
+*-1 : npm init -y <br />
+What It Does:<br />
+   -> Initializes a new Node.js project.<br />
+   -> Automatically fills out the package.json with default values.<br />
+   -> Skips the interactive prompts (which you'd get if you just used npm init without -y).<br />
+*-2 : npm i typescript --save-dev<br />
 Breakdown:
     npm i is short for npm install.
 
@@ -41,24 +41,24 @@ Breakdown:
         We use Express to build web servers and APIs easily and efficiently.
 
     🔧 What It Gives You:
-        Easy routing (handling URLs and HTTP methods).
+        Easy routing (handling URLs and HTTP methods).<br />
 
-        Middleware system (for things like logging, authentication, etc.).
+        Middleware system (for things like logging, authentication, etc.).<br />
 
-        Simplifies working with requests and responses.
+        Simplifies working with requests and responses.<br />
 
-        Faster setup compared to raw Node.js http module.
+        Faster setup compared to raw Node.js http module.<br />
 *-7 :npm i @types/express --save-dev
-*-7 :✅ Why Do We Use This?
-        We use this command to install TypeScript type definitions for Express.
+*-7 :✅ Why Do We Use This?<br />
+        We use this command to install TypeScript type definitions for Express.<br />
 
     📦 What It Does:
-        Adds Express's type definitions (like types for Request, Response, NextFunction, etc.).
+        Adds Express's type definitions (like types for Request, Response, NextFunction, etc.).<br />
 
-        Allows TypeScript to understand Express-specific objects, methods, and parameters.
+        Allows TypeScript to understand Express-specific objects, methods, and parameters.<br />
 
-    🔍 Why It's Needed:
-        Express is written in JavaScript, not TypeScript, so its types are not built-in.
+    🔍 Why It's Needed:<br />
+        Express is written in JavaScript, not TypeScript, so its types are not built-in.<br />
 *-1 :npm i ts-node nodemon --save-dev
 *-1 :
 *-1 :npm install express @prisma/client
