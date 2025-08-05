@@ -6,41 +6,41 @@ What It Does:<br />
    -> Automatically fills out the package.json with default values.<br />
    -> Skips the interactive prompts (which you'd get if you just used npm init without -y).<br />
 *-2 : npm i typescript --save-dev<br />
-Breakdown:
-    npm i is short for npm install.
+Breakdown:<br />
+    npm i is short for npm install.<br />
 
-        typescript is the package being installed.
+        typescript is the package being installed.<br />
 
-        --save-dev means it's a dev dependency — it's only needed during development (e.g., for compiling .ts files), not in production.
+        --save-dev means it's a dev dependency — it's only needed during development (e.g., for compiling .ts files), not in production. <br />
 
-        Result:
+        Result: <br />
 
-            Adds TypeScript to your node_modules.
-            Updates your package.json like this:
+            Adds TypeScript to your node_modules. <br />
+            Updates your package.json like this: <br />
 
         json:
             "devDependencies": {
             "typescript": "^X.Y.Z"
-            }
-*-3 :npx tsc --init
-*-3 :initializes a TypeScript configuration file named tsconfig.json in your project directory.
-    ✅ What It Does:
-        Creates a tsconfig.json file with a default set of compiler options.
+            }<br />
+*-3 :npx tsc --init<br />
+*-3 :initializes a TypeScript configuration file named tsconfig.json in your project directory.<br />
+    ✅ What It Does:<br />
+        Creates a tsconfig.json file with a default set of compiler options.<br />
 
-        Enables TypeScript to understand how to compile your .ts files (what files to include, where to output compiled JS, which language features to support, etc.).
-*-4 :npm in @types/node --save-dev
-*-4 :✅ What This Does:
-        Installs the Node.js type definitions for TypeScript as a development dependency.
+        Enables TypeScript to understand how to compile your .ts files (what files to include, where to output compiled JS, which language features to support, etc.).<br />
+*-4 :npm in @types/node --save-dev<br />
+*-4 :✅ What This Does:<br />
+        Installs the Node.js type definitions for TypeScript as a development dependency.<br />
 
-    💡 Why It's Needed:
+    💡 Why It's Needed:<br />
         
-*-5 :mkdir src
-*-5 :Folder created by this 
-*-6 :npm i express
-*-6 :✅ Why Do We Use It?
-        We use Express to build web servers and APIs easily and efficiently.
+*-5 :mkdir src<br />
+*-5 :Folder created by this <br />
+*-6 :npm i express<br />
+*-6 :✅ Why Do We Use It?<br />
+        We use Express to build web servers and APIs easily and efficiently.<br />
 
-    🔧 What It Gives You:
+    🔧 What It Gives You:<br />
         Easy routing (handling URLs and HTTP methods).<br />
 
         Middleware system (for things like logging, authentication, etc.).<br />
