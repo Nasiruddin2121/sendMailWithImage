@@ -6,8 +6,8 @@ import morgan from "morgan";
 
 import path from "path";
 
-//  import users from './models/users/users.routes';
-// import cookieParser from "cookie-parser";
+ import users from './models/users/users.routes';
+import cookieParser from "cookie-parser";
 // import weatherRouter from './models/weather/weather.route';
 
 
@@ -49,7 +49,7 @@ app.use("/uploads", express.static(path.join(__dirname, "uploads")));
 //     })
 // })
 
-// app.use("/users", users);
+app.use("/users", users);
 // app.use('/api/weather', weatherRouter);   
 
 app.use((req: Request, res: Response, next: NextFunction) => {
