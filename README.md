@@ -27,7 +27,7 @@ Breakdown:<br />
     ✅ What It Does:<br />
         Creates a tsconfig.json file with a default set of compiler options.<br />
 
-        Enables TypeScript to understand how to compile your .ts files (what files to include, where to output compiled JS, which language features to support, etc.).<br />
+        Enables TypeScript to understand how to compile your .ts files (what files to include, where to output compiled JS, which language features to support, etc.). <br />
 *-4 :npm in @types/node --save-dev<br />
 *-4 :✅ What This Does:<br />
         Installs the Node.js type definitions for TypeScript as a development dependency.<br />

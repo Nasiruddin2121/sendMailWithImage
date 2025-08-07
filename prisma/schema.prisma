@@ -13,3 +13,13 @@ datasource db {
   provider = "postgresql"
   url      = env("DATABASE_URL")
 }
+
+model sendMail {
+  id         Int        @id @default(autoincrement())
+  name       String
+  image      String
+  createdAt  DateTime   @default(now()) @map("created_at")
+  updatedAt  DateTime   @updatedAt
+  
+  @@map("users")
+}

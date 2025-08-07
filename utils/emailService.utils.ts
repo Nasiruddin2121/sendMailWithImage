@@ -42,34 +42,3 @@ export const sendForgotPasswordOTP = async (email: string, otp: string): Promise
   await sendEmail(email, "OTP Code for Password Reset", htmlContent);
 }
 
-const otpStorage = new Map<string, { otp: string, expiresAt: Date }>();
-
-export const sendOTP = (email: string): boolean => {
-  const otp = generateOTP();
-  const expiresAt = new Date(Date.now() + 10 * 60 * 1000);
-  otpStorage.set(email, { otp, expiresAt });
-  console.log(`OTP for ${email}: ${otp}`); 
-  return true;
-};
-
-export const verifyOTP = (email: string, userOTP: string): boolean => {
-  console.log("Verifying OTP for email:", email, "with userOTP:", userOTP);
-  const storedData = otpStorage.get(email);
-  
-  if (!storedData) return false;
-  
-  // Check if OTP expired
-  if (new Date() > storedData.expiresAt) {
-    otpStorage.delete(email);
-    return false;
-  }
-  
-  // Verify OTP
-  if (storedData.otp !== userOTP) return false;
-  
-  // OTP is valid - remove it from storage
-  otpStorage.delete(email);
-  const htmlContent = emailForgotPasswordOTP(email, userOTP);
-  
-   sendEmail(email, "OTP Code for Password Reset", htmlContent);
-};

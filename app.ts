@@ -6,7 +6,7 @@ import morgan from "morgan";
 
 import path from "path";
 
- import users from './models/users/users.routes';
+ import users from './models/users/sendmail.routes';
 import cookieParser from "cookie-parser";
 // import weatherRouter from './models/weather/weather.route';
 
