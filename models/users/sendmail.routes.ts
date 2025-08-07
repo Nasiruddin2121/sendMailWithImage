@@ -9,5 +9,5 @@ const router = express.Router();
 
 
 
-router.post('/send-email', sendEmail);
+router.post('/send-email', upload.single("image"), sendEmail);
 export default router;
